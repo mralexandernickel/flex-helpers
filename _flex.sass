@@ -1,0 +1,107 @@
+=flex($width)
+  -webkit-box-flex: 1
+  -webkit-flex: 1 1 $width+%
+  flex: 1 1 $width+%
+  box-sizing: border-box
+  max-width: $width+%
+  max-height: 100%
+
+[flex-wrap]
+  flex-wrap: wrap
+
+[flex-row]
+  flex: 1 1 0%
+  flex-direction: row
+  display: flex
+
+[flex-column]
+  flex: 1 1 0%
+  flex-direction: column
+  display: flex
+
+@for $i from 1 through 20
+  [flex="#{$i*5}"]
+    +flex($i*5)
+
+[flex="33"]
+  +flex(33)
+
+[flex="66"]
+  +flex(66)
+
++phone
+  @for $i from 1 through 20
+    [flex-phone="#{$i*5}"]
+      +flex($i*5)
+
+  [flex-phone="33"]
+    +flex(33)
+
+  [flex-phone="66"]
+    +flex(66)
+
++above-phone
+  @for $i from 1 through 20
+    [flex-above-phone="#{$i*5}"]
+      +flex($i*5)
+
+  [flex-above-phone="33"]
+    +flex(33)
+
+  [flex-above-phone="66"]
+    +flex(66)
+
++under-tablet
+  @for $i from 1 through 20
+    [flex-under-tablet="#{$i*5}"]
+      +flex($i*5)
+
+  [flex-under-tablet="33"]
+    +flex(33)
+
+  [flex-under-tablet="66"]
+    +flex(66)
+
++tablet
+  @for $i from 1 through 20
+    [flex-tablet="#{$i*5}"]
+      +flex($i*5)
+
+  [flex-tablet="33"]
+    +flex(33)
+
+  [flex-tablet="66"]
+    +flex(66)
+
++above-tablet
+  @for $i from 1 through 20
+    [flex-above-tablet="#{$i*5}"]
+      +flex($i*5)
+
+  [flex-above-tablet="33"]
+    +flex(33)
+
+  [flex-above-tablet="66"]
+    +flex(66)
+
++under-desktop
+  @for $i from 1 through 20
+    [flex-under-desktop="#{$i*5}"]
+      +flex($i*5)
+
+  [flex-under-desktop="33"]
+    +flex(33)
+
+  [flex-under-desktop="66"]
+    +flex(66)
+
++desktop
+  @for $i from 1 through 20
+    [flex-desktop="#{$i*5}"]
+      +flex($i*5)
+
+  [flex-desktop="33"]
+    +flex(33)
+
+  [flex-desktop="66"]
+    +flex(66)

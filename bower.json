@@ -9,6 +9,7 @@
   "homepage": "",
   "ignore": [
     "**/.*",
+    "**/*.sass",
     "node_modules",
     "bower_components",
     "Gruntfile.coffee",

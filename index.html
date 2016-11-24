@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html {
+      height: 100%;
+    }
+    html body {
+      min-height: 100%;
+    }
+    .container {
+      width: 960px;
+      margin: 0 auto;
+    }
+  </style>
+  <link rel="stylesheet" href="flex-helpers.css">
+</head>
+<body>
+  <div class="container">
+    <div flex-row flex-wrap>
+      <div flex="33">eins</div>
+      <div flex="33">zwei</div>
+      <div flex="33">drei</div>
+      <div flex="33">vier</div>
+      <div flex="33">fünf</div>
+    </div>
+  </div>
+</body>
+</html>

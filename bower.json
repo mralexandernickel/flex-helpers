@@ -1,0 +1,19 @@
+{
+  "name": "flex-helpers",
+  "description": "Helper for flexboxes like seen in angular-material",
+  "main": "index.html",
+  "authors": [
+    "Alexander Nickel <mr.alexander.nickel@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "Gruntfile.coffee",
+    "index.html",
+    "test",
+    "tests"
+  ]
+}

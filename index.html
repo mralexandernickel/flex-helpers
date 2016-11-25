@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Flex Helpers Demo | mralexandernickel</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <style>
     * {
       box-sizing: border-box;
@@ -13,23 +13,206 @@
     }
     html body {
       min-height: 100%;
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.618;
+      letter-spacing: .05;
     }
     .container {
       width: 960px;
       margin: 0 auto;
     }
+    [flex] {
+      min-height: 200px;
+      line-height: 200px;
+      text-align: center;
+      font-size: 28px;
+    }
   </style>
-  <link rel="stylesheet" href="flex-helpers.css">
+  <link rel="stylesheet" href="flex-helpers.min.css">
 </head>
 <body>
   <div class="container">
+    <h1>Flex Helpers Demo</h1>
     <div flex-row flex-wrap>
-      <div flex="33">eins</div>
-      <div flex="33">zwei</div>
-      <div flex="33">drei</div>
-      <div flex="33">vier</div>
-      <div flex="33">fünf</div>
+      <div flex="33"><pre>flex="33"</pre></div>
+      <div flex="33"><pre>flex="33"</pre></div>
+      <div flex="33"><pre>flex="33"</pre></div>
+      <div flex="33"><pre>flex="33"</pre></div>
+      <div flex="66"><pre>flex="66"</pre></div>
+      <div flex="50"><pre>flex="50"</pre></div>
+      <div flex="50"><pre>flex="50"</pre></div>
     </div>
   </div>
+  <script>
+  var colors = [
+    'Black',
+    'Navy',
+    'DarkBlue',
+    'MediumBlue',
+    'Blue',
+    'DarkGreen',
+    'Green',
+    'Teal',
+    'DarkCyan',
+    'DeepSkyBlue',
+    'DarkTurquoise',
+    'MediumSpringGreen',
+    'Lime',
+    'SpringGreen',
+    'Aqua',
+    'Cyan',
+    'MidnightBlue',
+    'DodgerBlue',
+    'LightSeaGreen',
+    'ForestGreen',
+    'SeaGreen',
+    'DarkSlateGray',
+    'DarkSlateGrey',
+    'LimeGreen',
+    'MediumSeaGreen',
+    'Turquoise',
+    'RoyalBlue',
+    'SteelBlue',
+    'DarkSlateBlue',
+    'MediumTurquoise',
+    'Indigo  ',
+    'DarkOliveGreen',
+    'CadetBlue',
+    'CornflowerBlue',
+    'RebeccaPurple',
+    'MediumAquaMarine',
+    'DimGray',
+    'DimGrey',
+    'SlateBlue',
+    'OliveDrab',
+    'SlateGray',
+    'SlateGrey',
+    'LightSlateGray',
+    'LightSlateGrey',
+    'MediumSlateBlue',
+    'LawnGreen',
+    'Chartreuse',
+    'Aquamarine',
+    'Maroon',
+    'Purple',
+    'Olive',
+    'Gray',
+    'Grey',
+    'SkyBlue',
+    'LightSkyBlue',
+    'BlueViolet',
+    'DarkRed',
+    'DarkMagenta',
+    'SaddleBrown',
+    'DarkSeaGreen',
+    'LightGreen',
+    'MediumPurple',
+    'DarkViolet',
+    'PaleGreen',
+    'DarkOrchid',
+    'YellowGreen',
+    'Sienna',
+    'Brown',
+    'DarkGray',
+    'DarkGrey',
+    'LightBlue',
+    'GreenYellow',
+    'PaleTurquoise',
+    'LightSteelBlue',
+    'PowderBlue',
+    'FireBrick',
+    'DarkGoldenRod',
+    'MediumOrchid',
+    'RosyBrown',
+    'DarkKhaki',
+    'Silver',
+    'MediumVioletRed',
+    'IndianRed ',
+    'Peru',
+    'Chocolate',
+    'Tan',
+    'LightGray',
+    'LightGrey',
+    'Thistle',
+    'Orchid',
+    'GoldenRod',
+    'PaleVioletRed',
+    'Crimson',
+    'Gainsboro',
+    'Plum',
+    'BurlyWood',
+    'LightCyan',
+    'Lavender',
+    'DarkSalmon',
+    'Violet',
+    'PaleGoldenRod',
+    'LightCoral',
+    'Khaki',
+    'AliceBlue',
+    'HoneyDew',
+    'Azure',
+    'SandyBrown',
+    'Wheat',
+    'Beige',
+    'WhiteSmoke',
+    'MintCream',
+    'GhostWhite',
+    'Salmon',
+    'AntiqueWhite',
+    'Linen',
+    'LightGoldenRodYellow',
+    'OldLace',
+    'Red',
+    'Fuchsia',
+    'Magenta',
+    'DeepPink',
+    'OrangeRed',
+    'Tomato',
+    'HotPink',
+    'Coral',
+    'DarkOrange',
+    'LightSalmon',
+    'Orange',
+    'LightPink',
+    'Pink',
+    'Gold',
+    'PeachPuff',
+    'NavajoWhite',
+    'Moccasin',
+    'Bisque',
+    'MistyRose',
+    'BlanchedAlmond',
+    'PapayaWhip',
+    'LavenderBlush',
+    'SeaShell',
+    'Cornsilk',
+    'LemonChiffon',
+    'FloralWhite',
+    'Snow',
+    'Yellow',
+    'LightYellow',
+    'Ivory',
+    'White'
+  ];
+  var pickRandom = function(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+  }
+  var getInvertColor = function(rgb) {
+    var parts = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+    var brightness = 1;
+    var ir = Math.floor((255-parts[1]) * brightness);
+    var ig = Math.floor((255-parts[2]) * brightness);
+    var ib = Math.floor((255-parts[3]) * brightness);
+    return 'rgb(' + ir + ',' + ig + ',' + ib + ')';
+  }
+  var els = document.querySelectorAll('[flex-row] div');
+  for (let el of els) {
+    var colorBg = pickRandom(colors);
+    el.style.backgroundColor = colorBg;
+    el.style.color = getInvertColor(
+      window.getComputedStyle(el, null).getPropertyValue("background-color")
+    );
+  }
+  </script>
 </body>
 </html>

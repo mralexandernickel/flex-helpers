@@ -9,10 +9,20 @@ module.exports = (grunt) ->
     cssmin:
       dist:
         files:
-          "<%= pkg.name %>.min.css": "<%= pkg.name %>.css"
+          "<%= pkg.name %>.min.css": "<%= pkg.name %>.prefixed.css"
+    sasslint:
+      options:
+        configFile: ".sass-lint.yml"
+      target: ["./*.sass"]
+    autoprefixer:
+      dist:
+        src: "<%= pkg.name %>.css"
+        dest: "<%= pkg.name %>.prefixed.css"
 
   grunt.loadNpmTasks "grunt-sass"
   grunt.loadNpmTasks "grunt-contrib-cssmin"
+  grunt.loadNpmTasks "grunt-sass-lint"
+  grunt.loadNpmTasks "grunt-autoprefixer"
 
-  grunt.registerTask "default", ["sass"]
-  grunt.registerTask "dist", ["sass", "cssmin"]
+  grunt.registerTask "default", ["sasslint","sass"]
+  grunt.registerTask "dist", ["sasslint","sass","autoprefixer","cssmin"]

@@ -10,6 +10,7 @@
   "ignore": [
     "**/.*",
     "**/*.sass",
+    "**/*.prefixed.css",
     "node_modules",
     "bower_components",
     "Gruntfile.coffee",

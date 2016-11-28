@@ -1,6 +1,6 @@
 {
   "name": "flex-helpers",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "description": "Helper for flexboxes like seen in angular-material",
   "main": "index.html",
   "scripts": {

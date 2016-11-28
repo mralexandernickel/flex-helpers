@@ -245,14 +245,14 @@
     max-width: 100%;
     max-height: 100%; }
   [flex-phone="33"] {
-    flex: 1 1 33%;
+    flex: 1 1 33.333333%;
     box-sizing: border-box;
-    max-width: 33%;
+    max-width: 33.333333%;
     max-height: 100%; }
   [flex-phone="66"] {
-    flex: 1 1 66%;
+    flex: 1 1 66.666666%;
     box-sizing: border-box;
-    max-width: 66%;
+    max-width: 66.666666%;
     max-height: 100%; } }
 
 @media (min-width: 600px) {
@@ -357,14 +357,14 @@
     max-width: 100%;
     max-height: 100%; }
   [flex-above-phone="33"] {
-    flex: 1 1 33%;
+    flex: 1 1 33.333333%;
     box-sizing: border-box;
-    max-width: 33%;
+    max-width: 33.333333%;
     max-height: 100%; }
   [flex-above-phone="66"] {
-    flex: 1 1 66%;
+    flex: 1 1 66.666666%;
     box-sizing: border-box;
-    max-width: 66%;
+    max-width: 66.666666%;
     max-height: 100%; } }
 
 @media (max-width: 599px) {
@@ -469,14 +469,14 @@
     max-width: 100%;
     max-height: 100%; }
   [flex-under-tablet="33"] {
-    flex: 1 1 33%;
+    flex: 1 1 33.333333%;
     box-sizing: border-box;
-    max-width: 33%;
+    max-width: 33.333333%;
     max-height: 100%; }
   [flex-under-tablet="66"] {
-    flex: 1 1 66%;
+    flex: 1 1 66.666666%;
     box-sizing: border-box;
-    max-width: 66%;
+    max-width: 66.666666%;
     max-height: 100%; } }
 
 @media (min-width: 600px) and (max-width: 959px) {
@@ -581,14 +581,14 @@
     max-width: 100%;
     max-height: 100%; }
   [flex-tablet="33"] {
-    flex: 1 1 33%;
+    flex: 1 1 33.333333%;
     box-sizing: border-box;
-    max-width: 33%;
+    max-width: 33.333333%;
     max-height: 100%; }
   [flex-tablet="66"] {
-    flex: 1 1 66%;
+    flex: 1 1 66.666666%;
     box-sizing: border-box;
-    max-width: 66%;
+    max-width: 66.666666%;
     max-height: 100%; } }
 
 @media (min-width: 960px) {
@@ -693,14 +693,14 @@
     max-width: 100%;
     max-height: 100%; }
   [flex-above-tablet="33"] {
-    flex: 1 1 33%;
+    flex: 1 1 33.333333%;
     box-sizing: border-box;
-    max-width: 33%;
+    max-width: 33.333333%;
     max-height: 100%; }
   [flex-above-tablet="66"] {
-    flex: 1 1 66%;
+    flex: 1 1 66.666666%;
     box-sizing: border-box;
-    max-width: 66%;
+    max-width: 66.666666%;
     max-height: 100%; } }
 
 @media (max-width: 959px) {
@@ -805,14 +805,14 @@
     max-width: 100%;
     max-height: 100%; }
   [flex-under-desktop="33"] {
-    flex: 1 1 33%;
+    flex: 1 1 33.333333%;
     box-sizing: border-box;
-    max-width: 33%;
+    max-width: 33.333333%;
     max-height: 100%; }
   [flex-under-desktop="66"] {
-    flex: 1 1 66%;
+    flex: 1 1 66.666666%;
     box-sizing: border-box;
-    max-width: 66%;
+    max-width: 66.666666%;
     max-height: 100%; } }
 
 @media (min-width: 960px) {
@@ -917,12 +917,12 @@
     max-width: 100%;
     max-height: 100%; }
   [flex-desktop="33"] {
-    flex: 1 1 33%;
+    flex: 1 1 33.333333%;
     box-sizing: border-box;
-    max-width: 33%;
+    max-width: 33.333333%;
     max-height: 100%; }
   [flex-desktop="66"] {
-    flex: 1 1 66%;
+    flex: 1 1 66.666666%;
     box-sizing: border-box;
-    max-width: 66%;
+    max-width: 66.666666%;
     max-height: 100%; } }

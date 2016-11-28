@@ -4,43 +4,77 @@
   <meta charset="UTF-8">
   <title>Flex Helpers Demo | mralexandernickel</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    html {
-      height: 100%;
-    }
-    html body {
-      min-height: 100%;
-      font-family: 'Roboto', sans-serif;
-      line-height: 1.618;
-      letter-spacing: .05;
-    }
-    .container {
-      width: 960px;
-      margin: 0 auto;
-    }
-    [flex] {
-      min-height: 200px;
-      line-height: 200px;
-      text-align: center;
-      font-size: 28px;
-    }
-  </style>
   <link rel="stylesheet" href="flex-helpers.min.css">
+  <link rel="stylesheet" href="demo.min.css">
 </head>
 <body>
   <div class="container">
     <h1>Flex Helpers Demo</h1>
     <div flex-row flex-wrap>
-      <div flex="33"><pre>flex="33"</pre></div>
-      <div flex="33"><pre>flex="33"</pre></div>
-      <div flex="33"><pre>flex="33"</pre></div>
-      <div flex="33"><pre>flex="33"</pre></div>
-      <div flex="66"><pre>flex="66"</pre></div>
-      <div flex="50"><pre>flex="50"</pre></div>
-      <div flex="50"><pre>flex="50"</pre></div>
+      <div
+        flex-phone="100"
+        flex-tablet="50"
+        flex-desktop="33">
+        <p>
+          flex-phone="100"<br>
+          flex-tablet="50"<br>
+          flex-desktop="33"<br>
+        </p>
+      </div>
+      <div
+        flex-phone="100"
+        flex-tablet="50"
+        flex-desktop="33">
+        <p>
+          flex-phone="100"<br>
+          flex-tablet="50"<br>
+          flex-desktop="33"<br>
+        </p>
+      </div>
+      <div
+        flex-phone="100"
+        flex-tablet="50"
+        flex-desktop="33">
+        <p>
+          flex-phone="100"<br>
+          flex-tablet="50"<br>
+          flex-desktop="33"<br>
+        </p>
+      </div>
+      <div
+        flex-phone="100"
+        flex-tablet="50"
+        flex-desktop="33">
+        <p>
+          flex-phone="100"<br>
+          flex-tablet="50"<br>
+          flex-desktop="33"<br>
+        </p>
+      </div>
+      <div
+        flex-under-desktop="100"
+        flex-desktop="66">
+        <p>
+          flex-under-desktop="100"<br>
+          flex-desktop="66"<br>
+        </p>
+      </div>
+      <div
+        flex-phone="100"
+        flex-above-phone="50">
+        <p>
+          flex-phone="100"<br>
+          flex-above-phone="50"<br>
+        </p>
+      </div>
+      <div
+        flex-phone="100"
+        flex-above-phone="50">
+        <p>
+          flex-phone="100"<br>
+          flex-above-phone="50"<br>
+        </p>
+      </div>
     </div>
   </div>
   <script>

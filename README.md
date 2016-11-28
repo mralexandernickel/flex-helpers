@@ -32,7 +32,7 @@ you can set the width explicitly for them
       ...
     </div>
 
-if you dont to separate that fine, you can also do
+if you don't want to separate that specific, you can also do
 
     <div flex-row flex-wrap>
       <div

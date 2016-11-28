@@ -6,10 +6,16 @@ module.exports = (grunt) ->
       dist:
         files:
           "<%= pkg.name %>.css": "<%= pkg.name %>.sass"
+      demo:
+        files:
+          "demo.css": "demo.sass"
     cssmin:
       dist:
         files:
           "<%= pkg.name %>.min.css": "<%= pkg.name %>.prefixed.css"
+      demo:
+        files:
+          "demo.min.css": "demo.prefixed.css"
     sasslint:
       options:
         configFile: ".sass-lint.yml"
@@ -18,6 +24,9 @@ module.exports = (grunt) ->
       dist:
         src: "<%= pkg.name %>.css"
         dest: "<%= pkg.name %>.prefixed.css"
+      demo:
+        src: "demo.css"
+        dest: "demo.prefixed.css"
 
   grunt.loadNpmTasks "grunt-sass"
   grunt.loadNpmTasks "grunt-contrib-cssmin"

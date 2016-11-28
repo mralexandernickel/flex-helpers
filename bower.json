@@ -11,6 +11,8 @@
     "**/.*",
     "**/*.sass",
     "**/*.prefixed.css",
+    "demo.*",
+    "_demo-*",
     "node_modules",
     "bower_components",
     "Gruntfile.coffee",
